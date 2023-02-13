@@ -7,7 +7,7 @@ int numberA = Convert.ToInt32(Console.ReadLine());
 int result = numberA * numberA;
 // rezult
 Console.WriteLine("Квадрат числа равен = " + numberA + " равен " + result);
-*/
+
 Console.Write("Введите 1-ое число:");
 int firstValue = Convert.ToInt32(Console.ReadLine()); //camelcase 
 Console.Write("Введите 2-ое число:");
@@ -24,3 +24,18 @@ Console.WriteLine(" Число " + firstValue + " не является квад
 }
 int result = firstValue + secondValue; // результат   
 Console.WriteLine("", result);
+*/
+Console.Write("Введите число N:");
+int N = Convert.ToInt32(Console.ReadLine());
+if (N<0)
+{
+    Console.WriteLine("Введено отрицательное число. Умножили его на -1:)" );
+    N = N* (-1);
+}
+int negativeN = N * (-1);
+
+while (negativeN <= N) // [-N; N]
+    {
+    Console.WriteLine(negativeN);
+    negativeN++; //
+    }
