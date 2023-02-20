@@ -22,12 +22,15 @@
 
 // var имя переменной = значение
 
-var stringNumber = "1234"
+var stringNumber = "привет";
 
-int number; // если строчка состоит из чисел, то сюда попадает наше число
+int Number; // если строчка состоит из чисел, то сюда попадает наше число
+
+bool isNumber = int.TryParse(stringNumber, out Number); // true - строчка состоит из чисел, false - присутствуют спец символы, это преобразование строчки в формат числа.(если в строчке только цифры,
+// то проверка произсходит успешно
+
+//if ()
 
 
-if ()
-
-
-Console.WriteLine(number);
+Console.WriteLine(isNumber);
+Console.WriteLine(Number);
