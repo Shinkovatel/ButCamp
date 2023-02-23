@@ -17,3 +17,28 @@ for(int i = 0; i <= N; i+= 2)
 } 
 
 // i=i+2
+
+
+//  void  Digitals(string value)
+// {
+//     int number;
+//     bool isdigit = int.TryParse(value, out number); 
+// }
+// void Input (string massageToUser)
+// {
+//     int number;
+//     Console.Write(massageToUser);
+//     string value = Console.ReadLine();
+//     bool isdigit = Digitals(value);
+
+//     if (isdigit == true)
+//     {
+//         number = int.Parse(value);
+        
+//     }
+//     else
+//     {
+//         Console.WriteLine("Число введено не корректно");
+       
+//     }
+// }
