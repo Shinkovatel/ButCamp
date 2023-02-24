@@ -32,3 +32,17 @@ else
 }
 
 Console.WriteLine($"Исходный массив: [{String.Join("; ", Array)}]");
+
+
+int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+int foundNumber = new Random().Next(11); // [0;10]
+string isFind = "НЕ НАЙДЕНО"; // Число икскомое не найдено
+for (int i = 0; i < array.Length; i++)
+{
+    if (array[i] == foundNumber)
+    {
+        isFind = "НАЙДЕНО";// Число найдено
+        break; // Ломает цикл при нахождении искомого числа
+    }
+}
+Console.WriteLine($"Число {foundNumber}: {isFind}");
