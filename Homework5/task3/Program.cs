@@ -32,6 +32,7 @@ Console.WriteLine($"[{String.Join(";", PsevdoArray)}]"); // для провер�
 int size2 = PsevdoArray.Length;
 int minValue = PsevdoArray[0];
 int maxValue = PsevdoArray[0];
+
 for (int i = 0; i < size2; i++)
 {
     if (maxValue < PsevdoArray[i])
@@ -44,5 +45,6 @@ for (int i = 0; i < size2; i++)
     }
 
 }
-
+int difference = maxValue - minValue;
 Console.WriteLine($"Минимальное значение массива {minValue}" + "\n" + $"Максимальное значение массива {maxValue}");
+Console.WriteLine($"Разница между максимальным и минимальным значением равна {difference}");
