@@ -13,17 +13,17 @@ int size = realArray.Length;
 
 var t = 100;
 
-for (int i = 0; i < size; i++) // умножили каждый элемент массива на 100
-{
-    realArray[i] = t * realArray[i];
-}
+// for (int i = 0; i < size; i++) // умножили каждый элемент массива на 100
+// {
+//     realArray[i] = t * realArray[i];
+// }
 Console.WriteLine($"[{String.Join(";", realArray)}]"); // для проверки вывода
 
 // преобразовали массив из Double в int, чтобы удобнее было считать
     int[] PsevdoArray = new int[size];
     for (int i = 0; i < size; i++)
     {
-        PsevdoArray[i] = (int)Math.Ceiling(realArray[i]);
+        PsevdoArray[i] = (int)Math.Ceiling(realArray[i]*t);
     }
 
 Console.WriteLine($"[{String.Join(";", PsevdoArray)}]"); // для проверки вывода
