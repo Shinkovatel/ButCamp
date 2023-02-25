@@ -20,8 +20,8 @@ for (int i = 0; i < size; i++) // умножили каждый элемент �
 Console.WriteLine($"[{String.Join(";", realArray)}]"); // для проверки вывода
 
 // преобразовали массив из Double в int, чтобы удобнее было считать
-    int[] PsevdoArray = new int[realArray.Length];
-    for (int i = 0; i < realArray.Length; i++)
+    int[] PsevdoArray = new int[size];
+    for (int i = 0; i < size; i++)
     {
         PsevdoArray[i] = (int)Math.Ceiling(realArray[i]);
     }
