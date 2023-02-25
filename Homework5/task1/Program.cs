@@ -12,7 +12,7 @@ int[] EvenArray = GetArray(5);
 
 Console.WriteLine($"[{String.Join(";" , EvenArray)}]");
 
-int SumEvenNumber =0;
+int CountNumber =0;
 
 int size = EvenArray.Length;
 
@@ -20,7 +20,7 @@ for (int i = 0; i < size; i++)
 {
     if (EvenArray[i] % 2 == 0)
     {
-        SumEvenNumber+= EvenArray[i];
+        CountNumber++;
     }
 }
-Console.WriteLine($"Сумма четных чисел {SumEvenNumber}");
+Console.WriteLine($"Количество четных чисел в массиве: {CountNumber}");
