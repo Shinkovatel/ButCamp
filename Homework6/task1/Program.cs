@@ -1,4 +1,4 @@
-﻿Console.Write("Введите числa : ");
+﻿Console.Write("Введите числa через запятую ',' : ");
 String valueStr = Console.ReadLine(); // числа текстом
 string[] values = valueStr.Split(","); // числа по отдельности
 
