@@ -27,3 +27,15 @@ void PrintMatrix(int[,] matr)
 int[,] resultMatr = GetMatrix(3,4,0,100);
 PrintMatrix(resultMatr);
 
+// как инициализировать массив если незнаешь его длину
+
+int[] arr;
+int size = 10;
+
+if (size != 0)
+{
+    arr = new int[size+1];
+}
+
+// элемент ищется по формуле (i + j), где i - номер строки и j - номер столбца
+
