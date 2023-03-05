@@ -33,8 +33,8 @@ if (!check_B2)
     goto input1;
 }
 
-int equation_x = koff1 * x;
+int equation_x = (B2 - B1) / (koff1 - koff2);
 
-int equation_y = 0;
+int equation_y = koff1 * equation_x + B1;
 
 
