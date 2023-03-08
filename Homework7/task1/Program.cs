@@ -26,7 +26,7 @@ var t = 100;
     return PseudoArray;
 }
 
-void PrintMatrixDouble(double[,] matr)
+void PrintArrayDouble(double[,] matr)
 {
     for (int i = 0; i < matr.GetLength(0); i++)
     {
@@ -39,7 +39,7 @@ void PrintMatrixDouble(double[,] matr)
     }
 }
 
-void PrintMatrixint(int[,] matr)
+void PrintArrayInt(int[,] matr)
 {
     for (int i = 0; i < matr.GetLength(0); i++)
     {
@@ -53,6 +53,6 @@ void PrintMatrixint(int[,] matr)
 }
 
 double[,] result = GetArray(3,4);
-PrintMatrixDouble(result);
+PrintArrayDouble(result);
 int[,] FinalArray = Transform(result);
-PrintMatrixint(FinalArray);
+PrintArrayInt(FinalArray);
