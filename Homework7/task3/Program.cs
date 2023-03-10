@@ -53,15 +53,17 @@ double[] sum = new double[col];
     {
         for (int j = 0; j < col; j++)
         {
-        sum[i] += MatrixArray[j,i];
+        sum[j] += MatrixArray[i,j]/col;
         }
     }
-double result = 0;
-foreach (double element in sum)
-{
-    result = element / col;
-   Console.WriteLine($" Среднее арифметическое значение столбцов {} [{String.Join(";", result) }]");
-}
+Console.WriteLine($" Среднее арифметическое значение столбцов [{String.Join(";", sum) }]");
+
+// double result = 0;
+// foreach (double element in sum)
+// {
+//     result = element / col;
+//     Console.WriteLine($" Среднее арифметическое значение столбцов [{String.Join(";", result) }]");
+// }
  // int [,] GetSummCol(int [,] array)
 // {
 //     var sum = Enumerable.Range(0, col).Select(x => array.GetColumn(x).Sum()/col);
