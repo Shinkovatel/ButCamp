@@ -25,7 +25,7 @@ input1:
 /// <returns></returns>
 int PrintNumber(int start, int end)
 {
-    if(start == 0) return end + 1; //  возвращаем 0 как достигаем следующего числа за конечным
+    if(start == 0) return end + 1; 
     if(end == 0 && start != 0) return PrintNumber(start-1, 1);
     return PrintNumber(start-1, PrintNumber(start, end-1));
 }
