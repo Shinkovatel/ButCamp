@@ -1,15 +1,45 @@
-﻿int Max(int arg1, int arg2, int arg3)
-{
-    int result = arg1;
-    if (arg2 > result) result = arg2;
-    if (arg3 > result) result = arg3; 
-    return result;
-} 
-//               0   1   2   3   4   5   6   7    8  
-int[] array = { 11, 12, 13, 14, 154, 16, 17, 18, 19 };
-int result = Max(
-    Max(array[0], array[1], array[2]),
-    Max(array[3], array[4], array[5]),
-    Max(array[6], array[7], array[8]));
+﻿// //int n = Random.Shared.Next(10000000);
 
-Console.WriteLine(result);
+// double s= 0;
+// for (int n = 0; n < 15; n++)
+// {
+//  int i = n; 
+//  int count = 0;
+//  while (i>0)
+// {
+//     s+= i;
+//     i = i / 2; // log(n) + 1 
+//     count++;
+// }
+// System.Console.WriteLine($"n: {n} count: {count}");
+// }
+
+
+
+
+  /// <summary>
+  /// Сортировка методом выбора
+  /// </summary>
+  /// <param name="collection">Исходный массив</param>
+  /// <returns>Отсортированный массив массив</returns>
+   int[] SortSelection(int[] collection)
+  {
+    int size = collection.Length;
+    for (int i = 0; i < size - 1; i++)
+    {
+      int pos = i;
+      for (int j = i + 1; j < size; j++)
+      {
+        if (collection[j] < collection[pos]) pos = j;
+      }
+      int temp = collection[i];
+      collection[i] = collection[pos];
+      collection[pos] = temp;
+    }
+    return collection;
+  }
+
+var arr = new int [] {1,2,5,3,4,9};
+System.Console.WriteLine(string.Join(',', arr));
+SortSelection(arr);
+System.Console.WriteLine(string.Join(',', arr));
